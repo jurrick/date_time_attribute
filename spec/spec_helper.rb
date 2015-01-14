@@ -1,3 +1,5 @@
+require 'rspec/its'
+
 require 'date_time_attribute'
 require 'active_record'
 
@@ -18,6 +20,6 @@ end
 
 RSpec.configure do |config|
   config.mock_with :rspec
-  config.color_enabled = true
+  config.color = true
   config.formatter = :documentation
 end
